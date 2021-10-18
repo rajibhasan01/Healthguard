@@ -1,5 +1,6 @@
 import React from 'react';
 import Banner from '../Banner/Banner';
+import Banner2 from '../Banner/Banner2';
 import Blogs from '../Blogs/Blogs/Blogs';
 import FQA from '../FQA/FQA';
 import Gallery from '../Gallery/Gallery';
@@ -15,6 +16,7 @@ const Home = () => {
             <FQA />
             <Blogs />
             <Professionals />
+            <Banner2 />
         </div>
     );
 };
