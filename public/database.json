@@ -125,5 +125,35 @@
             "description": "Vestibulum gravida augue, pellentesque amet consectetur adipiscing elit hasellus. Tempor accumsan apibus liqua.",
             "img": "https://i.ibb.co/T8Lmw2p/p3-blog-img-3-1-800x547.jpg"
         }
+    ],
+    "Professionals": [
+        {
+            "id": 1,
+            "D_name": "Hannah Lou",
+            "type": "Cardiology",
+            "description": "Lorem ipsum dolor sit amet, pellentesque amet consectetur adipiscing elit hasellus. Tempor accumsan dapibus ua. ",
+            "img": "https://i.ibb.co/H2VYgJ1/team-img-1.webp"
+        },
+        {
+            "id": 2,
+            "D_name": "Luke Lamber",
+            "type": "Gynecology",
+            "description": "Mauris pellentesque amet, consectetur adipiscing elit hasellus. Tempor accumsan dapbus pellentesque amet liqua.",
+            "img": "https://i.ibb.co/pn3PZ91/team-img-9.webp"
+        },
+        {
+            "id": 3,
+            "D_name": "Miley Morgan",
+            "type": "Neurology",
+            "description": "Vestibulum gravida augue, pellentesque amet consectetur adipiscing elit hasellus. Tempor accumsan apibus liqua.",
+            "img": "https://i.ibb.co/FWWKBN4/team-img-6.jpg"
+        },
+        {
+            "id": 4,
+            "D_name": "Bryan Davis",
+            "type": "Ophthalmology",
+            "description": "Vestibulum gravida augue, pellentesque amet consectetur adipiscing elit hasellus. Tempor accumsan apibus liqua.",
+            "img": "https://i.ibb.co/xMbCmH1/team-img-4.jpg"
+        }
     ]
 }
