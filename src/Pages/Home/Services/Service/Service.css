@@ -1,0 +1,21 @@
+.card-container{
+    overflow: hidden;
+    border-radius: 0;
+    font-weight: 400;
+    font-size: 15px;
+
+}
+.card-image{
+    overflow: hidden;
+    transition: transform 1.5s;
+    border-radius: 0;
+}
+.image-box{
+    overflow: hidden;
+    border-radius: 0;
+}
+
+.card-image:hover{
+ transform: scale(1.08);
+}
+

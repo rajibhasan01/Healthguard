@@ -1,0 +1,13 @@
+.gallery {
+    transition: transform 1.5s;
+
+}
+
+.gallery:hover{
+    transform: scale(1.08);
+
+}
+
+.image-box{
+    overflow: hidden;
+}

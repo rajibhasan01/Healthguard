@@ -1,10 +1,21 @@
 import React from 'react';
+import { Card, Col } from 'react-bootstrap';
+import './Service.css';
 
-const Service = () => {
+const Service = (props) => {
+    const { service } = props;
     return (
-        <div>
+        <Col>
+            <Card className="border-0 p-0 text-start card-container mb-4">
+                <div className="image-box">
+                    <Card.Img variant="top" className="card-image" src={service.img} />
+                </div>
 
-        </div>
+                <Card.Body className="ps-0">
+                    <Card.Text className="text-muted">{service.D_name}</Card.Text>
+                </Card.Body>
+            </Card>
+        </Col>
     );
 };
 
