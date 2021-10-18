@@ -4,7 +4,7 @@ import './Gallery.css';
 
 const Gallery = () => {
     return (
-        <Container fluid className="mb-5">
+        <Container fluid className="mb-5 pb-5">
             <Row className="g-4" xs={1} md={2} lg={4}>
                 <Col>
                     <Row xs={1} className="g-4">
