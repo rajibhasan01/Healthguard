@@ -15,8 +15,8 @@ const Services = () => {
     }, []);
 
     return (
-        <div className=" py-5">
-            <div className="container py-5">
+        <div className=" py-md-5">
+            <div className="container py-md-5">
 
                 <Row className="my-5" xs={1} md={2}>
                     <Col md={2}>

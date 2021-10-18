@@ -16,6 +16,7 @@ const Locations = () => {
     return (
         <div className="container my-5 py-md-5 text-center text-md-start">
             <h1>Our Locations</h1>
+            <hr className="d-md-none" />
             <div className="row">
                 {
                     serviceData.Loaction?.map(lc => <Location
