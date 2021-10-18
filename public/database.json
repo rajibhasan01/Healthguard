@@ -108,21 +108,21 @@
             "id": 1,
             "D_name": "Our Next Level of Care",
             "type": "Cardiology",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit hasellus. Tempor accumsan dapibus ua. ",
+            "description": "Lorem ipsum dolor sit amet, pellentesque amet consectetur adipiscing elit hasellus. Tempor accumsan dapibus ua. ",
             "img": "https://i.ibb.co/BcCzJVY/p3-blog-img-1-1-800x547.jpg"
         },
         {
             "id": 2,
             "D_name": "Care That Goes Beyond",
-            "price": "Gynecology",
-            "description": "Mauris pellentesque amet, consectetur adipiscing elit hasellus. Tempor accumsan dapbus liqua.",
+            "type": "Gynecology",
+            "description": "Mauris pellentesque amet, consectetur adipiscing elit hasellus. Tempor accumsan dapbus pellentesque amet liqua.",
             "img": "https://i.ibb.co/BGTPbtL/p3-blog-img-2-800x547.jpg"
         },
         {
             "id": 3,
             "D_name": "Blood Tests",
-            "price": "Neurology",
-            "description": "Vestibulum gravida augue, consectetur adipiscing elit hasellus. Tempor accumsan apibus liqua.",
+            "type": "Neurology",
+            "description": "Vestibulum gravida augue, pellentesque amet consectetur adipiscing elit hasellus. Tempor accumsan apibus liqua.",
             "img": "https://i.ibb.co/T8Lmw2p/p3-blog-img-3-1-800x547.jpg"
         }
     ]

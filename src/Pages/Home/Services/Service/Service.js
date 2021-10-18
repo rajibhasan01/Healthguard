@@ -12,7 +12,7 @@ const Service = (props) => {
                 </div>
 
                 <Card.Body className="ps-0">
-                    <Card.Text className="text-muted">{service.D_name}</Card.Text>
+                    <Card.Text className="text-muted text-design">{service.D_name}</Card.Text>
                 </Card.Body>
             </Card>
         </Col>

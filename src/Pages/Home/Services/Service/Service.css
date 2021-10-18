@@ -19,3 +19,7 @@
  transform: scale(1.08);
 }
 
+.card-container:hover .text-design{
+    color: tomato!important;
+
+}
