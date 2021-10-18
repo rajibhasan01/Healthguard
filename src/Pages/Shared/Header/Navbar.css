@@ -10,6 +10,8 @@
   margin-left: 2rem;
   font-size: 2rem;
   background: none;
+  padding-bottom: 5px;
+
 }
 
 .nav-menu {
@@ -56,6 +58,7 @@
 
 .nav-menu-items {
   width: 100%;
+  padding-left: 0;
 }
 
 .navbar-toggle {

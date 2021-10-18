@@ -3,6 +3,7 @@ import './App.css';
 import Home from './Pages/Home/Home/Home';
 import Login from './Pages/Login/Login/Login';
 import Register from './Pages/Login/Register/Register';
+import Footer from './Pages/Shared/Footer/Footer';
 import Navbar from './Pages/Shared/Header/Navbar';
 
 
@@ -17,6 +18,7 @@ function App() {
           <Route path='/register' component={Register} />
 
         </Switch>
+        <Footer />
       </Router>
     </>
   );
