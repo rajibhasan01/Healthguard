@@ -155,5 +155,73 @@
             "description": "Vestibulum gravida augue, pellentesque amet consectetur adipiscing elit hasellus. Tempor accumsan apibus liqua.",
             "img": "https://i.ibb.co/xMbCmH1/team-img-4.jpg"
         }
+    ],
+    "Loaction": [
+        {
+            "id": 1,
+            "D_name": "Aurora Polyclinic",
+            "address": "14 Rushcroft Rd,",
+            "city": "Brixton"
+        },
+        {
+            "id": 2,
+            "D_name": "Health Centre",
+            "address": "Cardiology",
+            "city": "Caliphornia"
+        },
+        {
+            "id": 3,
+            "D_name": "Gisoua",
+            "address": "97 Herne Hill Rd,",
+            "city": "Clapham Common"
+        },
+        {
+            "id": 4,
+            "D_name": "Aurora Polyclinic",
+            "address": "26 Caldervale Rd,",
+            "city": "Brixton"
+        },
+        {
+            "id": 5,
+            "D_name": "Laboratory",
+            "address": "9 William Margrie Cl,",
+            "city": "Peckham"
+        },
+        {
+            "id": 6,
+            "D_name": "ProMedica Hospital",
+            "address": "105 Lomond Grove,",
+            "city": "Brixton"
+        },
+        {
+            "id": 7,
+            "D_name": "Aurora Polyclinic",
+            "address": "105 Lomond Grove,",
+            "city": "Brixton"
+        },
+        {
+            "id": 8,
+            "D_name": "Laboratory",
+            "address": "9 William Margrie Cl,",
+            "city": "Peckham"
+        },
+        {
+            "id": 9,
+            "D_name": "Aurora Polyclinic",
+            "address": "14 Rushcroft Rd,",
+            "city": "Brixton"
+        },
+        {
+            "id": 10,
+            "D_name": "ProMedica Hospital",
+            "address": "105 Lomond Grove,",
+            "city": "Brixton"
+        },
+        {
+            "id": 11,
+            "D_name": "Aurora Polyclinic",
+            "address": "14 Rushcroft Rd,",
+            "city": "Brixton"
+        }
     ]
 }
