@@ -6,11 +6,13 @@ import { SidebarData } from './SidebarData';
 import './Navbar.css';
 import { IconContext } from 'react-icons';
 import { useHistory } from 'react-router';
+import useAuth from '../../../Hooks/useAuth';
 
 
 function Navbar() {
     const [sidebar, setSidebar] = useState(false);
     const history = useHistory();
+    const { user, logOut } = useAuth();
 
     const showSidebar = () => setSidebar(!sidebar);
 
@@ -29,8 +31,14 @@ function Navbar() {
                         <FaIcons.FaPhoneAlt className="d-none d-md-block mt-2" />
                         <p className="me-5 fw-lighter ms-3 d-none d-md-block mt-2">01754-063712</p>
 
-                        <FaIcons.FaUser className="text-white me-3 mt-2" />
-                        <p className="me-5 fw-light mt-2 login-cursor" onClick={handlePage}>Login</p>
+                        <FaIcons.FaUser className="text-white me-2 mt-2" />
+                        {
+                            !user.email ? <p className="me-5 fw-light mt-2 login-cursor" onClick={handlePage}>Login</p>
+                                :
+                                <div className="logoutName mt-2"><p className="text-muted pe-3"> {user.displayName} </p><p className="me-5 bg-secondary px-2 rounded fw-light login-cursor" onClick={logOut}>Logout</p></div>
+
+                        }
+
                     </div>
 
                 </div>

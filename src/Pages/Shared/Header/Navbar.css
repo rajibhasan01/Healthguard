@@ -88,3 +88,8 @@ span {
   color: tomato;
 
 }
+
+.logoutName{
+   display: flex;
+   
+}
