@@ -9,6 +9,7 @@ import Register from './Pages/Login/Register/Register';
 import Footer from './Pages/Shared/Footer/Footer';
 import Navbar from './Pages/Shared/Header/Navbar';
 import NotFound from './Pages/NotFound/NotFound';
+import ServicesProvided from './Pages/ServicesProvided/ServicesProvided/ServicesProvided';
 
 
 function App() {
@@ -22,6 +23,8 @@ function App() {
             <Route path='/home' component={Home} />
             <Route path='/login' component={Login} />
             <Route path='/register' component={Register} />
+            <Route path='/servicesprovider' component={ServicesProvided} />
+
             <PrivateRoute path='/appointment'>
               <Appointment />
             </PrivateRoute>
