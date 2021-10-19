@@ -30,7 +30,7 @@ function Navbar() {
                         <p className="me-5 fw-lighter ms-3 d-none d-md-block mt-2">01754-063712</p>
 
                         <FaIcons.FaUser className="text-white me-3 mt-2" />
-                        <p className="me-5 fw-light mt-2" onClick={handlePage}>Login</p>
+                        <p className="me-5 fw-light mt-2 login-cursor" onClick={handlePage}>Login</p>
                     </div>
 
                 </div>

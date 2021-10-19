@@ -12,14 +12,14 @@ const Footer = () => {
                         <div className="row">
                             <div className="col-md-6 ">
                                 <div className="logo-part">
-                                    <img src="https://i.ibb.co/sHZz13b/logo.png" className="w-50 logo-footer" alt="pic" />
+                                    <img src="https://i.ibb.co/3BfgD1z/Pngtree-world-covid-19-awareness-stay-5824967.png" className="w-50 logo-footer" alt="pic" />
                                     <p>7637 Laurel Dr.King Of Prussia, PA 19406</p>
-                                    <p>Use this tool as test data for an automated system or find your next pen</p>
+                                    <p>Use this tool as test data for an automated <br /> system or find your next pen</p>
                                 </div>
                             </div>
                             <div className="col-md-6 px-4">
-                                <h6> About Company</h6>
-                                <p>But horizontal lines can only be a full pixel high.</p>
+                                <h6> Health Guard</h6>
+                                <p>We care for your health and happy life</p>
                                 <Link to="#" className="btn-footer"> More Info </Link><br />
                                 <Link to="#" className="btn-footer"> Contact Us</Link>
                             </div>
@@ -42,7 +42,7 @@ const Footer = () => {
                                     </div>
                                     <div className="col-md-6 px-4">
                                         <ul>
-                                            <li> <Link to="#"> Cab Faciliy</Link> </li>
+                                            <li> <Link to="#"> Ambulance</Link> </li>
                                             <li> <Link to="#"> Fax</Link> </li>
                                             <li> <Link to="#"> Terms</Link> </li>
                                             <li> <Link to="#"> Policy</Link> </li>
@@ -62,7 +62,7 @@ const Footer = () => {
                                     <input type="text" placeholder="search here...." name="search" />
                                     <input type="button" value="Go" />
                                 </form>
-                                <p>That's technology limitation of LCD monitors</p>
+                                <p>We care for your health and happy life</p>
                             </div>
                         </div>
                     </div>
