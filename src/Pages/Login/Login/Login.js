@@ -1,39 +1,41 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Image } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import { useHistory, useLocation } from 'react-router';
+import useAuth from '../../../Hooks/useAuth';
 import './Login.css';
 const Login = () => {
-    // const { googleSignIn, githubSignIn, fbSignIn, handleManulaLogin, getEmail, getPassword } = useAuth();
+    const { googleSignIn, githubSignIn, handleManulaLogin, getEmail, getPassword } = useAuth();
 
-    // const [error, setError] = useState('');
-    // const location = useLocation();
-    // const history = useHistory();
-    // const redirect_uri = location.state?.from || '/home';
+    const [error, setError] = useState('');
+    const location = useLocation();
+    const history = useHistory();
+    const redirect_uri = location.state?.from || '/home';
 
-    // const handleGoogleLogin = () => {
-    //     googleSignIn()
-    //         .then(result => {
-    //             history.push(redirect_uri);
-    //             setError('');
-    //         })
-    //         .catch(error => {
-    //             console.log(error.message);
-    //             setError(error.message);
-    //         })
+    const handleGoogleLogin = () => {
+        googleSignIn()
+            .then(result => {
+                history.push(redirect_uri);
+                setError('');
+            })
+            .catch(error => {
+                console.log(error.message);
+                setError(error.message);
+            })
 
-    // };
+    };
 
-    // const handleGitLogin = () => {
-    //     githubSignIn()
-    //         .then(result => {
-    //             history.push(redirect_uri);
-    //             setError('');
-    //         })
-    //         .catch(error => {
-    //             console.log(error.message);
-    //             setError(error.message);
-    //         })
-    // };
+    const handleGitLogin = () => {
+        githubSignIn()
+            .then(result => {
+                history.push(redirect_uri);
+                setError('');
+            })
+            .catch(error => {
+                console.log(error.message);
+                setError(error.message);
+            })
+    };
 
     // const handleFbLogin = () => {
     //     fbSignIn()
@@ -47,18 +49,18 @@ const Login = () => {
     //         })
     // };
 
-    // const handleLogin = (event) => {
-    //     event.preventDefault();
-    //     handleManulaLogin()
-    //         .then(result => {
-    //             history.push(redirect_uri);
-    //             setError('');
-    //         })
-    //         .catch(error => {
-    //             console.log(error.message);
-    //             setError(error.message);
-    //         })
-    // };
+    const handleLogin = (event) => {
+        event.preventDefault();
+        handleManulaLogin()
+            .then(result => {
+                history.push(redirect_uri);
+                setError('');
+            })
+            .catch(error => {
+                console.log(error.message);
+                setError(error.message);
+            })
+    };
     return (
         <div className="login container-fluid d-flex justify-content-center marginTop">
             <div className="row container ">
@@ -66,7 +68,7 @@ const Login = () => {
                     <div className="">
                         <p className="fs-3 fw-light text-muted pt-5 text-start">Welcome to Healthguard providers <br /> and administrators
                             {
-                                // !error.length || <small className="fw-light text-muted"><br />{error}</small>
+                                !error.length || <small className="fw-light text-muted"><br />{error}</small>
                             }
                         </p>
 
@@ -74,10 +76,10 @@ const Login = () => {
                         <div className=" mb-5 rounded login-form text-start">
                             <Image src="" className="loginPhoto rounded-circle pt-1 bg-light" />
                             <h2 className="text-dark text-start pb-3 mt-3">Login <i className="fas fa-sign-in-alt fs-3"></i></h2>
-                            <form onSubmit="{handleLogin}">
-                                <input onBlur="{getEmail}" className="border-0 border-bottom  py-1 mb-3 input-design" type="email" name="" id="" placeholder="Your email" required />
+                            <form onSubmit={handleLogin}>
+                                <input onBlur={getEmail} className="border-0 border-bottom  py-1 mb-3 input-design" type="email" name="" id="" placeholder="Your email" required />
                                 <br />
-                                <input onBlur="{getPassword}" className="border-0 border-bottom py-1 mt-2 input-design" type="password" name="" id="" placeholder="Your password" required />
+                                <input onBlur={getPassword} className="border-0 border-bottom py-1 mt-2 input-design" type="password" name="" id="" placeholder="Your password" required />
                                 <br />
                                 <br />
                                 <button type="submit" className=" btn btn-design border-0 rounded py-1">Login</button>
@@ -86,9 +88,9 @@ const Login = () => {
                             <p className="text-dark text-start">Sign in using below apps</p>
                             <div className="text-start">
 
-                                <i onClick="{handleGoogleLogin}" className="fab fa-google text-light fs-4 icon-login google-icon"></i>
-                                <i onClick="{handleFbLogin}" className="fab fa-facebook-square text-light fs-4 icon-login"></i>
-                                <i onClick="{handleGitLogin}" className="fab fa-github-square text-light fs-4 icon-login"></i>
+                                <i onClick={handleGoogleLogin} className="fab fa-google text-light fs-4 icon-login google-icon"></i>
+                                <i className="fab fa-facebook-square text-light fs-4 icon-login"></i>
+                                <i onClick={handleGitLogin} className="fab fa-github-square text-light fs-4 icon-login"></i>
                             </div>
                         </div>
                         <p className="mb-5 pb-md-5 text-start">Don't have account? <Link className="text-decoration-none text-primary" to="/register">create a new account</Link></p>

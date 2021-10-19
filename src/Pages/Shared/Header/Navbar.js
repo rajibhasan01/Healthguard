@@ -5,11 +5,18 @@ import { Link } from 'react-router-dom';
 import { SidebarData } from './SidebarData';
 import './Navbar.css';
 import { IconContext } from 'react-icons';
+import { useHistory } from 'react-router';
+
 
 function Navbar() {
     const [sidebar, setSidebar] = useState(false);
+    const history = useHistory();
 
     const showSidebar = () => setSidebar(!sidebar);
+
+    const handlePage = () => {
+        history.push('/login');
+    }
 
     return (
         <>
@@ -23,7 +30,7 @@ function Navbar() {
                         <p className="me-5 fw-lighter ms-3 d-none d-md-block mt-2">01754-063712</p>
 
                         <FaIcons.FaUser className="text-white me-3 mt-2" />
-                        <p className="me-5 fw-light mt-2">Login</p>
+                        <p className="me-5 fw-light mt-2" onClick={handlePage}>Login</p>
                     </div>
 
                 </div>
