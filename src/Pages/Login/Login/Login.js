@@ -75,9 +75,9 @@ const Login = () => {
                             <Image src="" className="loginPhoto rounded-circle pt-1 bg-light" />
                             <h2 className="text-dark text-start pb-3 mt-3">Login <i className="fas fa-sign-in-alt fs-3"></i></h2>
                             <form onSubmit="{handleLogin}">
-                                <input onBlur="{getEmail}" className="border-0 border-bottom  py-1 ps-2 mb-3 input-design" type="email" name="" id="" placeholder="Your email" required />
+                                <input onBlur="{getEmail}" className="border-0 border-bottom  py-1 mb-3 input-design" type="email" name="" id="" placeholder="Your email" required />
                                 <br />
-                                <input onBlur="{getPassword}" className="border-0 border-bottom py-1 ps-2 mt-2 input-design" type="password" name="" id="" placeholder="Your password" required />
+                                <input onBlur="{getPassword}" className="border-0 border-bottom py-1 mt-2 input-design" type="password" name="" id="" placeholder="Your password" required />
                                 <br />
                                 <br />
                                 <button type="submit" className=" btn btn-design border-0 rounded py-1">Login</button>
@@ -112,8 +112,8 @@ const Login = () => {
                                 <div className="d-flex">
                                     <img src="https://i.ibb.co/MMRy63b/h4-icon-img-2.png" alt="" />
                                     <div className="ps-2">
-                                        <p className="fw-bold mt-0"> <span>Dentalhygiene</span> <br />
-                                            <span className="my-0 pt-0 fw-normal fs-6 d-block">Licensed hygienists</span></p>
+                                        <p className="fw-bold mt-0"> <span>Genencology</span> <br />
+                                            <span className="my-0 pt-0 fw-normal fs-6 d-block">Modern nursing methods</span></p>
                                     </div>
                                 </div>
                             </div>
@@ -121,8 +121,8 @@ const Login = () => {
                                 <div className="d-flex">
                                     <img src="https://i.ibb.co/m6Hr8Mm/h4-icon-img-2.png" alt="" />
                                     <div className="ps-2">
-                                        <p className="fw-bold mt-0"> <span>Dentalhygiene</span> <br />
-                                            <span className="my-0 pt-0 fw-normal fs-6 d-block">Licensed hygienists</span></p>
+                                        <p className="fw-bold mt-0"> <span>Prosthodocs</span> <br />
+                                            <span className="my-0 pt-0 fw-normal fs-6 d-block">Efficientness & safety</span></p>
                                     </div>
                                 </div>
                             </div>
