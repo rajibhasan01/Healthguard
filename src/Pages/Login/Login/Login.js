@@ -64,7 +64,7 @@ const Login = () => {
             <div className="row container ">
                 <div className="col-md-7 mx-auto pt-5">
                     <div className="">
-                        <p className="fs-3 fw-light text-muted pt-5 text-start">Welcome to Healthgradesproviders <br /> and administrators
+                        <p className="fs-3 fw-light text-muted pt-5 text-start">Welcome to Healthguard providers <br /> and administrators
                             {
                                 // !error.length || <small className="fw-light text-muted"><br />{error}</small>
                             }
