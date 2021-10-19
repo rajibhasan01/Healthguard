@@ -24,6 +24,8 @@ function App() {
             <Route path='/login' component={Login} />
             <Route path='/register' component={Register} />
             <Route path='/servicesprovider' component={ServicesProvided} />
+            <Route path='/home/:serviceID' />
+
 
             <PrivateRoute path='/appointment'>
               <Appointment />

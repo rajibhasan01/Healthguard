@@ -23,3 +23,10 @@
     color: tomato!important;
 
 }
+.take-appointment{
+    font-size: 13px;
+}
+
+.take-appointment:hover{
+    color: black!important;
+}
