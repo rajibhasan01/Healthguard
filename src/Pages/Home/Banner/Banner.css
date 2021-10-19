@@ -1,9 +1,12 @@
 .banner-background{
     background-color: #060b26;
     border-radius: 0;
-    margin-top: 50px;
  
     
+}
+
+.marginTop{
+    margin-top: 50px;
 }
 
 .rotate{
