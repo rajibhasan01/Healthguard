@@ -10,6 +10,7 @@ import Footer from './Pages/Shared/Footer/Footer';
 import Navbar from './Pages/Shared/Header/Navbar';
 import NotFound from './Pages/NotFound/NotFound';
 import ServicesProvided from './Pages/ServicesProvided/ServicesProvided/ServicesProvided';
+import SingleServiceDetails from './Pages/ServicesProvided/SingleServiceDetails/SingleServiceDetails';
 
 
 function App() {
@@ -20,12 +21,13 @@ function App() {
           <Navbar />
           <Switch>
             <Route exact path='/' component={Home} />
-            <Route path='/home' component={Home} />
+            <Route exact path='/home' component={Home} />
             <Route path='/login' component={Login} />
             <Route path='/register' component={Register} />
             <Route path='/servicesprovider' component={ServicesProvided} />
-            <Route path='/home/:serviceID' />
-
+            <PrivateRoute path='/home/:serviceID'>
+              <SingleServiceDetails />
+            </PrivateRoute>
 
             <PrivateRoute path='/appointment'>
               <Appointment />
