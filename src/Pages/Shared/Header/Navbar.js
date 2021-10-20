@@ -27,7 +27,7 @@ function Navbar() {
                     <Link to='#' className='menu-bars'>
                         <FaIcons.FaBars onClick={showSidebar} />
                     </Link>
-                    <div className="me-0 ms-auto d-flex text-white">
+                    <div className="me-0 mt-2 ms-auto d-flex text-white">
                         <FaIcons.FaPhoneAlt className="d-none d-md-block mt-2" />
                         <p className="me-5 fw-lighter ms-3 d-none d-md-block mt-2">01754-063712</p>
 
