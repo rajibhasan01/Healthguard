@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 import { HashLink } from 'react-router-hash-link';
 import { Card } from 'react-bootstrap';
 import { useParams } from 'react-router';
-import { Link } from 'react-router-dom';
 import * as CgIcon from "react-icons/cg";
 import AvailableDoctor from '../AvailableDoctor/AvailableDoctor';
 import './SingleServiceDetails.css';

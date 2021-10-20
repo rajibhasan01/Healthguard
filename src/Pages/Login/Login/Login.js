@@ -66,11 +66,10 @@ const Login = () => {
             <div className="row container ">
                 <div className="col-lg-7 mx-auto pt-5">
                     <div className="">
-                        <p className="fs-3 fw-light text-muted pt-5 text-center text-lg-start">Welcome to Healthguard providers <br /> and administrators
-                            {
-                                !error.length || <small className="fw-light text-muted"><br />{error}</small>
-                            }
-                        </p>
+                        <p className="fs-3 fw-light text-muted pt-5 text-center text-lg-start">Welcome to Healthguard providers <br /> and administrators</p>
+                        {
+                            !error.length || <small className="fw-light fs-6 text-dark"><br />{error}</small>
+                        }
 
 
                         <div className=" mb-5 rounded login-form text-center text-lg-start">
