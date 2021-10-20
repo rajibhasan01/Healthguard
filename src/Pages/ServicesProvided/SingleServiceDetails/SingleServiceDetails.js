@@ -43,7 +43,7 @@ const SingleServiceDetails = () => {
         <div className="container marginTop py-5">
             <div>
                 <div className="row">
-                    <div className="col-12 col-md-9 pe-5">
+                    <div className="col-12 col-md-7 col-lg-9 pe-5 mb-5">
 
                         <Card.Title className="text-dark fs-4 pb-4">{displayItem[0]?.D_name}</Card.Title>
                         <Card className="border-0 text-start">
@@ -64,14 +64,16 @@ const SingleServiceDetails = () => {
                             <Card.Footer className="border-0 ps-0 bg-white">
                                 <small className="text-dark">Price:<span className="text-muted fw-normal ms-1"> $ {displayItem[0]?.price}</span></small>
                             </Card.Footer>
-                            <Card.Text className="text-muted">
+                            <Card.Text className="text-muted d-flex justify-content-between">
                                 <HashLink className="text-decoration-none text-info take-appointment read-more" to='/home#diagnosis'><CgIcon.CgChevronDoubleLeft className="fs-5 icon-background mb-0" /> Back to Home page</HashLink>
+
+                                <HashLink className="text-decoration-none text-info take-appointment read-more" to='/appointment'>Make an Appointment<CgIcon.CgChevronDoubleRight className="fs-5 icon-background mb-0 ms-2" /></HashLink>
                             </Card.Text>
                         </Card>
                     </div>
 
 
-                    <div className="col-12 col-md-3 mt-5 mt-md-0">
+                    <div className="col-12 col-md-5 col-lg-3 mt-5 mt-md-0">
 
                         <div className="row g-4">
                             <h4 className="ps-md-5 text-center ms-md-3">Available Doctors</h4>
