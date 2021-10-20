@@ -29,7 +29,7 @@ const DoctorDetails = () => {
                 <div className="container-fuild mx-5 px-md-5 ">
                     <div className="d-flex justify-content-between align-items-center">
                         <h3 className="text-dark">{doctorInfo[0]?.D_name}</h3>
-                        <h6 className="text-muted">Home - {doctorInfo[0]?.type} - {doctorInfo[0]?.D_name}</h6>
+                        <h6 className="text-muted">Home - {doctorInfo[0]?.type} - <span className="text-info ms-0">{doctorInfo[0]?.D_name}</span></h6>
                     </div>
                 </div>
 
