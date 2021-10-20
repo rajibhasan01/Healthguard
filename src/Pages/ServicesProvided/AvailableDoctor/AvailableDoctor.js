@@ -1,7 +1,6 @@
 import React from 'react';
 import { Card } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import * as IconName from "react-icons/bs";
 import * as CgIcon from "react-icons/cg";
 
 const AvailableDoctor = ({ doctor }) => {

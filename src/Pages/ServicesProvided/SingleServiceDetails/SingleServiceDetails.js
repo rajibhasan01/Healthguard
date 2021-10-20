@@ -1,6 +1,9 @@
 import React, { useEffect, useState } from 'react';
+import { HashLink } from 'react-router-hash-link';
 import { Card } from 'react-bootstrap';
 import { useParams } from 'react-router';
+import { Link } from 'react-router-dom';
+import * as CgIcon from "react-icons/cg";
 import AvailableDoctor from '../AvailableDoctor/AvailableDoctor';
 import './SingleServiceDetails.css';
 
@@ -60,8 +63,11 @@ const SingleServiceDetails = () => {
                                 </Card.Text>
                             </Card.Body>
                             <Card.Footer className="border-0 ps-0 bg-white">
-                                <small className="text-muted">Price: ${displayItem[0]?.price}</small>
+                                <small className="text-dark">Price:<span className="text-muted fw-normal ms-1"> $ {displayItem[0]?.price}</span></small>
                             </Card.Footer>
+                            <Card.Text className="text-muted">
+                                <HashLink className="text-decoration-none text-info take-appointment read-more" to='/home#diagnosis'><CgIcon.CgChevronDoubleLeft className="fs-5 icon-background mb-0" /> Back to Home page</HashLink>
+                            </Card.Text>
                         </Card>
                     </div>
 
