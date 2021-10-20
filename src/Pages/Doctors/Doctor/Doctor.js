@@ -1,6 +1,7 @@
 import React from 'react';
 import { Card, Col } from 'react-bootstrap';
 import * as IconName from "react-icons/bs";
+import { HashLink } from 'react-router-hash-link';
 
 
 const Doctor = ({ doctor }) => {
@@ -18,7 +19,8 @@ const Doctor = ({ doctor }) => {
                         <Card.Text>
                             {type}
                         </Card.Text>
-                        <Card.Text className="text-muted fw-bold mt-4 read-more">Details <IconName.BsPlusCircleFill className="fs-5 icon-background mb-1 ms-2" /></Card.Text>
+                        <Card.Text className="mt-4 read-more">
+                            <HashLink className="text-decoration-none text-muted take-appointment fw-bold read-more" to={`/doctors/${doctor.id}`}> Details <IconName.BsPlusCircleFill className="fs-5 icon-background mb-1 ms-2" /></HashLink></Card.Text>
                     </div>
 
                 </Card.Body>

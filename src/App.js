@@ -12,6 +12,7 @@ import NotFound from './Pages/NotFound/NotFound';
 import ServicesProvided from './Pages/ServicesProvided/ServicesProvided/ServicesProvided';
 import SingleServiceDetails from './Pages/ServicesProvided/SingleServiceDetails/SingleServiceDetails';
 import Doctors from './Pages/Doctors/Doctors/Doctors';
+import DoctorDetails from './Pages/Doctors/DoctorsDetails/DoctorDetails';
 
 
 function App() {
@@ -25,8 +26,9 @@ function App() {
             <Route exact path='/home' component={Home} />
             <Route path='/login' component={Login} />
             <Route path='/register' component={Register} />
-            <Route path='/doctors' component={Doctors} />
+            <Route exact path='/doctors' component={Doctors} />
             <Route path='/servicesprovider' component={ServicesProvided} />
+            <Route path='/doctors/:drID' component={DoctorDetails} />
             <PrivateRoute path='/home/:serviceID'>
               <SingleServiceDetails />
             </PrivateRoute>

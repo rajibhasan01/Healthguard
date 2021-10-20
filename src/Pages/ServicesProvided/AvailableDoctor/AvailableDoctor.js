@@ -9,7 +9,7 @@ const AvailableDoctor = ({ doctor }) => {
         <div className="col-12 ms-lg-5 ps-5">
             <Card className="border-0">
                 <div className="d-flex">
-                    <div className="my-auto">
+                    <div className="my-auto image-box">
                         <Card.Img variant="top" className="" src={doctor?.img} />
                     </div>
 
@@ -22,7 +22,7 @@ const AvailableDoctor = ({ doctor }) => {
                         </Card.Body>
 
                         <Card.Footer className="border-0 bg-white">
-                            <Link className="text-decoration-none text-info take-appointment read-more" to={`/home/${doctor.id}`}>Visit Doctor <CgIcon.CgChevronDoubleRight className="fs-5 icon-background mb-0" /> </Link>
+                            <Link className="text-decoration-none text-info take-appointment read-more" to={`/doctors/${doctor.id}`}>Visit Doctor <CgIcon.CgChevronDoubleRight className="fs-5 icon-background mb-0" /> </Link>
                         </Card.Footer>
                     </div>
 
