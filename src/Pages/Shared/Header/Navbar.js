@@ -24,8 +24,9 @@ function Navbar() {
         <>
             <IconContext.Provider value={{ color: '#fff' }}>
                 <div className='navbar'>
-                    <Link to='#' className='menu-bars'>
+                    <Link to='#' className='menu-bars text-decoration-none text-white'>
                         <FaIcons.FaBars onClick={showSidebar} />
+                        <h3 className="ms-3 d-none d-md-inline">Heart Guard</h3>
                     </Link>
                     <div className="me-0 mt-2 ms-auto d-flex text-white">
                         <FaIcons.FaPhoneAlt className="d-none d-md-block mt-2" />
