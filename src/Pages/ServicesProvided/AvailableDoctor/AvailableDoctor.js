@@ -1,9 +1,13 @@
 import React from 'react';
 import { Card } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
+import * as IconName from "react-icons/bs";
+import * as CgIcon from "react-icons/cg";
 
 const AvailableDoctor = ({ doctor }) => {
+
     return (
-        <div className="col-12 ms-lg-5">
+        <div className="col-12 ms-lg-5 ps-5">
             <Card className="border-0">
                 <div className="d-flex">
                     <div className="my-auto">
@@ -11,15 +15,15 @@ const AvailableDoctor = ({ doctor }) => {
                     </div>
 
                     <div>
-                        <Card.Body>
-                            <Card.Title className="text-dark fs-5">{doctor?.D_name}</Card.Title>
-                            <Card.Text className="text-dark">
-                                How long does it take to get results?
+                        <Card.Body className="mx-2 p-1">
+                            <Card.Title className="text-dark fs-4">{doctor.D_name}</Card.Title>
+                            <Card.Text className="text-dark ">
+                                <small className="text-muted"> {doctor?.type}</small>
                             </Card.Text>
                         </Card.Body>
 
                         <Card.Footer className="border-0 bg-white">
-                            <small className="text-muted">Price: ${doctor?.price}</small>
+                            <Link className="text-decoration-none text-info take-appointment read-more" to={`/home/${doctor.id}`}>Appointment <CgIcon.CgChevronDoubleRight className="fs-5 icon-background mb-0" /> </Link>
                         </Card.Footer>
                     </div>
 

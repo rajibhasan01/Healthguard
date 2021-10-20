@@ -7,6 +7,7 @@ import './SingleServiceDetails.css';
 const SingleServiceDetails = () => {
     const { serviceID } = useParams();
     const [singleItem, setSingleItem] = useState([]);
+    const [doctors, setDoctors] = useState([]);
 
 
     useEffect(() => {
@@ -17,11 +18,22 @@ const SingleServiceDetails = () => {
 
     }, []);
 
+    useEffect(() => {
+        fetch('/database3.json')
+            .then(res => res.json())
+            .then(data => setDoctors(data))
+            .catch(error => { console.log(error.message) })
+
+    }, []);
+
     const key = parseInt(serviceID);
 
     const displayItem = singleItem.filter(item => key === item.id);
+    const availableDr = doctors.filter(dr => key === dr.D_id);
+
 
     const rowNumber = [1, 2, 3];
+    console.log(availableDr);
 
 
 
@@ -29,7 +41,7 @@ const SingleServiceDetails = () => {
         <div className="container marginTop py-5">
             <div>
                 <div className="row">
-                    <div className="col-12 col-md-8 pe-5">
+                    <div className="col-12 col-md-9 pe-5">
 
                         <Card.Title className="text-dark fs-4 pb-4">{displayItem[0]?.D_name}</Card.Title>
                         <Card className="border-0 text-start">
@@ -54,14 +66,14 @@ const SingleServiceDetails = () => {
                     </div>
 
 
-                    <div className="col-12 col-md-4 mt-5 mt-md-0">
+                    <div className="col-12 col-md-3 mt-5 mt-md-0">
 
                         <div className="row g-4">
-                            <h4 className="ps-md-5 ms-md-2">Available Doctors</h4>
+                            <h4 className="ps-md-5 text-center ms-md-3">Available Doctors</h4>
                             {
-                                rowNumber.map(item => <AvailableDoctor
-                                    key={item}
-                                    doctor={displayItem[0]}
+                                availableDr?.map(dctr => <AvailableDoctor
+                                    key={dctr.id}
+                                    doctor={dctr}
                                 />)
                             }
 
